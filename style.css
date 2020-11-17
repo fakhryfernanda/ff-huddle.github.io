@@ -1,0 +1,168 @@
+/* ===========
+   TYPOGRAPHY
+   =========== */
+
+h1 {
+  font-family: 'Poppins';
+}
+
+p {
+  font-family: 'Open Sans'
+}
+
+/* ======
+   LAYOUT
+   ====== */
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(257, 40%, 49%);
+  background-image:url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.header-icon {
+  font-size: 2rem;
+  margin-right: 0.2em;
+}
+
+.header-text {
+  font-size: 2rem;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-text{
+  width: 42%;
+}
+
+.main-text p {
+  font-size: 1rem;
+}
+
+.main-text > p:first-of-type {
+  color: #c8bae8;
+}
+
+.main-button{
+  background-color: white;
+  border: none;
+  outline: none;
+  color: hsl(257, 40%, 49%);
+  font-size: 0.9rem;
+  padding: 1em 4em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30% / 100%;
+  box-shadow: 1px 1.5px 10px rgba(0,0,0,0.7);
+}
+
+.main-button:hover{
+  opacity: 0.9;
+}
+
+.main-button:active{
+  opacity: 0.9;
+}
+
+/* FOOTER */
+
+footer{
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer i { /* footer icon */
+  color:white;
+  font-size:1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin-left: 0.75em;
+}
+
+.fa-facebook-f {
+  padding: 0.5em 0.7em;
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    background-image:url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: hsl(257, 40%, 49%);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 3em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .main-text {
+    width: 90%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-text > p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .main-button {
+    margin-top: 1em;
+    padding: 1em 5em;
+  }
+
+  footer {
+    margin: 5em 0;
+    justify-content: center;
+  }
+}
